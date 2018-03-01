@@ -1,0 +1,390 @@
+
+<div class="reservoir-data-section">
+<div class="row">
+  <div class="col-lg-6">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-7 col-xs-7">
+        <div class="title_np"><span>Re</span>servoir Data </div>
+      </div>
+       <div class="col-lg-6 col-md-6 col-sm-5 col-xs-5"><a href="#" class="btn btn">Edit</a> </div>
+    </div>
+    <div class="row">
+       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h3>Inflow Performance Type</h3>
+        <div class="mui-select" tabindex="0">
+          <select id="selectmultiple" tabindex="-1">
+            <option name="" value="UserProvidedPi">User Provided PI</option>
+            <option name="" value="Vogel">Vogel</option>
+            <option name="" value="darcy">Darcy</option>
+          </select>
+          <div class="mui-event-trigger"></div>
+        </div>
+      </div>
+    </div>
+	  
+<!---User Provided PI-------------------------------------------->
+	  
+    <div id="UserProvidedPi">
+      <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Productivity Index</div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <p> -  <span class="value_text">bpd/psi </span></p>
+        </div>
+        
+      </div>
+      <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Reservoir Pressure</div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <p>- <span class="value_text">psia</span></p>
+        </div>
+        
+      </div>
+      <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Reservoir Tempertaure</div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <p>-  <span class="value_text">deg F</span></p>
+        </div>
+       
+      </div>
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="checkbox icheck ">
+            <label>
+            <div class="icheckbox_square-green" aria-checked="false" aria-disabled="false" style="position: relative;">
+              <input type="checkbox" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+              <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+            <span>Completions Pressure Drop Included</span>
+            </label>
+          </div>
+        </div>
+        <div class="col-md-4 padding-10"></div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="checkbox icheck ">
+              <label>
+              <div class="icheckbox_square-green" aria-checked="false" aria-disabled="false" style="position: relative;">
+                <input type="checkbox" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+                <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+              <span>Vogel Correction Below BPP</span>
+              </label>
+            </div>
+          </div>
+          <div class="col-md-4 padding-10"></div>
+        </div>
+      </div>
+    </div>
+	  
+ <!---Vogel-------------------------------------------->
+	  
+    <div id="Vogel" style="display:none ;">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> Reservoir Pressure</div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class=""> <span class="value_text">psia </span>
+          </div>
+        </div>
+       
+      </div>
+      <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Reservoir Tempertaure</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class=""><span class="col-md-3 value_text">deg F</span>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> Standing Flow Efficiency</div>
+       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class=""><span class="col-md-3 value_text">deg F</span>
+          </div>
+        </div>
+      
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> Text Flowrate</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class=""> <span class="value_text">bbl/d</span>
+          </div>
+        </div>
+       
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> Text Pressure</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class=""> <span class="col-md-3 value_text">psig</span>
+          </div>
+        </div>
+       
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="checkbox icheck ">
+            <label>
+            <div class="icheckbox_square-green" aria-checked="false" aria-disabled="false" style="position: relative;">
+              <input type="checkbox" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+              <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+            <span>Completions Pressure Drop Included: </span>
+            </label>
+          </div>
+          <div>
+            <div class="checkbox icheck ">
+              <label>
+              <div class="icheckbox_square-green" aria-checked="false" aria-disabled="false" style="position: relative;">
+                <input type="checkbox" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+                <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+              <span>Vogel Correction Below BPP: </span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	  
+ <!---darcy-------------------------------------------->  
+	  
+    <div id="darcy" style="display: none;">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Reservoir Pressure</div>
+       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class=""><span class="value_text">psia </span>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Reservoir Tempertaure</div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class=""> <span class="value_text">deg F</span>
+          </div>
+        </div>
+       
+      </div>
+      <div class="row">
+       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Average Reservoir Permeability</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class="">   <span class="value_text">md</span>
+          </div>
+        </div>
+     
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Reservoir Thickness</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class="">  <span class="value_text">ft</span>
+          </div>
+        </div>
+      
+      </div>
+      <div class="row">
+       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Reservoir Skin</div>
+       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class="">  <span class="value_text">psig</span>
+          </div>
+        </div>
+      
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Reservoir Acreage</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class=""> <span class="value_text">acrs</span>
+          </div>
+        </div>
+       
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Turbulence Factor</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class="">  <span class="value_text">1/bpd</span>
+          </div>
+        </div>
+      
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Wellbore Radius</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class=""><span class="value_text">in</span>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-md-6 checkbox icheck">
+          <label>
+          <div class="iradio_square-green checked" aria-checked="false" aria-disabled="false" style="position: relative;">
+            <input type="radio" checked="" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+            <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+          <span>Shape Factor</span>
+          </label>
+        </div>
+        <div class="col-md-3">
+          <div style="margin-top: -20px;" class="mui-textfield">
+            <input type="text" placeholder="-" class="">
+          </div>
+        </div>
+        <div class="col-md-3 value_text"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="checkbox icheck ">
+            <label>
+            <div class="icheckbox_square-green" aria-checked="false" aria-disabled="false" style="position: relative;">
+              <input type="checkbox" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+              <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+            <span>Completions Pressure Drop Included: </span>
+            </label>
+          </div>
+          <div>
+            <div class="checkbox icheck ">
+              <label>
+              <div class="icheckbox_square-green" aria-checked="false" aria-disabled="false" style="position: relative;">
+                <input type="checkbox" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+                <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+              <span>Vogel Correction Below BPP: </span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title_np"><span>Da</span>ta History</div>
+        <div class="row">
+          <div class="row marg-t-15">
+            <div class="col-md-12">
+                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <p class="text-color"> Date Range </p>
+              </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="mui-textfield" style="padding: 0px; margin: -10px 0px 10px 0px">
+                  <input type="text" id="datepicker" placeholder="Start Date" class="datepicker">
+                  <i class="fa fa-calendar text-color input-calender"> </i> </div>
+              </div>
+               <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12">
+                <p class="text-color">To </p>
+              </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="mui-textfield" style="padding: 0px; margin: -10px 0px 10px 0px">
+                  <input type="text" id="" placeholder="End Date" class="datepicker">
+                  <i class="fa fa-calendar text-color input-calender"> </i> </div>
+              </div>
+            </div>
+            <div class="col-lg-12 marg-t-15">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="mui-select" style="padding: 0px; margin: -10px 0px 10px 0px" tabindex="0">
+                  <select tabindex="-1">
+                    <option>Graph</option>
+                    <option>Table</option>
+                  </select>
+                  <div class="mui-event-trigger"></div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="mui-select" style="padding: 0px; margin: -10px 0px 10px 0px" tabindex="0">
+                  <select tabindex="-1">
+                    <option>Productivity Index</option>
+                    <option>Reservoir Pressure</option>
+                    <option>Reservoir Tempertaure</option>
+                  </select>
+                  <div class="mui-event-trigger"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div><img class="img-responsive" src="../../assets/dist/images/data_history_graph.jpg" alt=""></div>
+      </div>
+      <div class="col-md-12">
+        <div class="title_np"><span>Re</span>servoir Performance Curve</div>
+        <div class="row">
+          <div class="marg-t-15">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 hidden-xs "> </div>
+             <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12"> <span class="text-color">Inflow Performance Type </span> </div>
+             <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+              <div class="mui-select" style="padding: 0px; margin: -10px 0px 10px 0px" tabindex="0">
+                <select tabindex="-1">
+                  <option>User Provided PI </option>
+                  <option>Vogel</option>
+                  <option>Darcy</option>
+                </select>
+                <div class="mui-event-trigger"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div><img class="img-responsive" src="../../assets/dist/images/reservoir_performance_curves.jpg" alt=""></div>
+      </div>
+      <div class="col-md-12">
+        <div class="title_np"><span>Se</span>nsitivity Analysis Curve</div>
+        <div class="row">
+          <div class="row marg-t-15">
+            <div class="col-lg-6"></div>
+            <div class="col-md-3"> </div>
+            <div class="col-md-3">
+              <div class="mui-select" style="padding: 0px; margin: -10px 0px 10px 0px" tabindex="0">
+                <select tabindex="-1">
+                  <option>Model 1</option>
+                  <option>Model 2 </option>
+                  <option>Model 3 </option>
+                </select>
+                <div class="mui-event-trigger"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div><img class="img-responsive" src="../../assets/dist/images/producing_bottomhole_curve.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+$(function() {
+    $('#UserProvidedPi').show();
+    $('#Vogel').hide();
+    $('#darcy').hide();
+    $('#selectmultiple').change(function(){
+      // alert(this.value);
+       if(this.value == "UserProvidedPi") {
+       	$('#UserProvidedPi').show();
+        $('#Vogel').hide();
+        $('#darcy').hide();
+       }
+       else if(this.value == "Vogel") {
+       	$('#UserProvidedPi').hide();
+        $('#Vogel').show();
+        $('#darcy').hide();
+       }
+      else if(this.value == "darcy") {
+        $('#UserProvidedPi').hide();
+        $('#Vogel').hide();
+        $('#darcy').show();
+       }
+       else{
+        $('#UserProvidedPi').hide();
+    $('#Vogel').hide();
+    $('#darcy').hide();
+       }
+    });
+};
+
+</script>

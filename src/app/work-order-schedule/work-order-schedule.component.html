@@ -1,0 +1,832 @@
+
+<section class="wo-schedule">
+  <div class="breadcrumbs">
+    <ol class="breadcrumb">
+      <li><a href="index_map.html"> Home </a></li>
+      <li class="active"> Work Order Schedule </li>
+    </ol>
+  </div>
+  <div class="box no-border">
+    <div class="box-header">
+      <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <div class="col-sm-3">
+          <div class="title_np"><span>Wor</span>k Order Schedule </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <p class="text-color padding-t"> Date Range </p>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div class="mui-textfield input-text ">
+            <input type="text" id="" placeholder="Start Date" class="datepicker">
+            <i class="fa fa-calendar text-color input-calender"> </i> </div>
+        </div>
+        <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12">
+          <p class="text-color padding-t">To </p>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div class="mui-textfield input-text">
+            <input type="text" id="" placeholder="End Date" class="datepicker">
+            <i class="fa fa-calendar text-color input-calender"> </i> </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div class="padding-t">
+            <button type="button" class="btn btn-primary"> Submit </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="col-sm-6">
+          <input class="search" type="text" placeholder="Search Reports " />
+        </div>
+        <div class="col-sm-6">
+          <p class="text-color padding-t pull-right"> <a data-toggle="modal" data-target="#NewWOSchedule">+ Add a New WO Schedule</a> </p>
+        </div>
+      </div>
+    </div>
+    <div class="box-body">
+      <div class="row bg border-bottom">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+          <div class="col-sm-7">Well Name</div>
+          <div class="col-sm-5">BU</div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 border-l">
+          <div class="col-sm-5">Proposed Job <br>
+            TYPE</div>
+          <div class="col-sm-3">AFE Request</div>
+          <div class="col-sm-2">STA</div>
+          <div class="col-sm-2">DAYS</div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 border-lr">
+          <div class="col-sm-4">Prpposed ESP TYPE</div>
+          <div class="col-sm-3">STATUS</div>
+          <div class="col-sm-3">Comments</div>
+          <div class="col-sm-2">A/B/C</div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12"> ACTIONS </div>
+      </div>
+      <div class="row row-eq-height bg1">
+        <div class="text-size">
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+            <div class="col-sm-7">
+              <p class="padding-top-10">INTA-C21</p>
+            </div>
+            <div class="col-sm-5">
+              <p class="padding-top-10">NBU</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 border-l">
+            <div class="col-sm-5">
+              <div class="dropdown messages-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Select job Type <span class="pull-right"><i class="fa fa-angle-down"> </i></span> </a>
+                <ul class="dropdown-menu">
+                  <li> <a href="#"> Select Job Type </a> </li>
+                  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair</a></li>
+                  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair (upsize)</a></li>
+                  <li> <a href="#">Pump Installation + Stimulation (revisit)</a></li>
+                  <li> <a href="#"> Pump Repair (Failed Start-up) + RIH bit scrapper</a></li>
+                  <li> <a href="#"> CTU Clean Up + Stimulation</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <p class="padding-top-10">17-IA-00567</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">Prepared</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10"> <span class="span-width">n/a</span> <span class="span datepicker "><img src="../../assets/dist/images/calender-sm-dis-icon.png" alt="" /></span></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 border-lr">
+            <div class="col-sm-4">
+              <p class="padding-top-10"> QN-120, 87 stages</p>
+            </div>
+            <div class="col-sm-3">ESP Already on Board</div>
+            <div class="col-sm-3"><a>
+              <p class="padding-top-10">view</p>
+              </a></div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">A </p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+            <div class="dropdown action-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Edit </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li> <a href="#"> <i class="fa fa-pencil"> </i> Modify </a> </li>
+                <li><a href="#"> <i class="fa fa-remove"> </i>Remove</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-eq-height bg1">
+        <div class="text-size">
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+            <div class="col-sm-7">
+              <p class="padding-top-10">INTA-C21</p>
+            </div>
+            <div class="col-sm-5">
+              <p class="padding-top-10">NBU</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 border-l">
+            <div class="col-sm-5">
+              <div class="dropdown messages-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pump Repair (Suspect tubing leak) <span class="pull-right"><i class="fa fa-angle-down"> </i></span> </a>
+                <ul class="dropdown-menu">
+				  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Select Job Type </a> </li>                 
+                  <li> <a href="#"> Pump Repair</a></li>
+                  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair (upsize)</a></li>
+                  <li> <a href="#"> Pump Installation + Stimulation (revisit)</a></li>
+                  <li> <a href="#"> Pump Repair (Failed Start-up) + RIH bit scrapper</a></li>
+                  <li> <a href="#"> CTU Clean Up + Stimulation</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <p class="padding-top-10">17-IA-00567</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">A</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10"><span class="span-width">4</span> <span class="span datepicker "><img src="../../assets/dist/images/calender-sm-icon.png" alt="" /></span></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 border-lr">
+            <div class="col-sm-4">
+              <p class="padding-top-10">QM 265 ARC, 39 stages</p>
+            </div>
+            <div class="col-sm-3">ESP Already on Board</div>
+            <div class="col-sm-3"><a>
+              <p class="padding-top-10">view</p>
+              </a></div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">A </p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+            <div class="dropdown action-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Edit </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li> <a href="#"> <i class="fa fa-pencil"> </i> Modify </a> </li>
+                <li><a href="#"> <i class="fa fa-remove"> </i>Remove</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-eq-height bg1">
+        <div class="text-size">
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+            <div class="col-sm-7">
+              <p class="padding-top-10">INTA-C21</p>
+            </div>
+            <div class="col-sm-5">
+              <p class="padding-top-10">NBU</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 border-l">
+            <div class="col-sm-5">
+              <div class="dropdown messages-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pump Repair (upsize) <span class="pull-right"><i class="fa fa-angle-down"> </i></span> </a>
+                <ul class="dropdown-menu">
+				 <li> <a href="#"> Pump Repair (upsize)</a></li>
+                  <li> <a href="#"> Select Job Type </a> </li>
+                  <li><a href="#">Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair</a></li>
+                  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>                 
+                  <li> <a href="#">Pump Installation + Stimulation (revisit)</a></li>
+                  <li> <a href="#"> Pump Repair (Failed Start-up) + RIH bit scrapper</a></li>
+                  <li> <a href="#"> CTU Clean Up + Stimulation</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <p class="padding-top-10">17-IA-00567</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">A</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10"><span class="span-width"> 2</span> <span class="span datepicker "><img src="../../assets/dist/images/calender-sm-icon.png" alt="" /></span></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 border-lr">
+            <div class="col-sm-4">
+              <p class="padding-top-10"> Q 10 ARF, 199 stages JN 21000, 64 STGS</p>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3"><a>
+              <p class="padding-top-10">view</p>
+              </a></div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">A </p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+            <div class="dropdown action-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Edit </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li> <a href="#"> <i class="fa fa-pencil"> </i> Modify </a> </li>
+                <li><a href="#"> <i class="fa fa-remove"> </i>Remove</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-eq-height bg1">
+        <div class="text-size">
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+            <div class="col-sm-7">
+              <p class="padding-top-10">INTA-C21</p>
+            </div>
+            <div class="col-sm-5">
+              <p class="padding-top-10">NBU</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 border-l">
+            <div class="col-sm-5">
+              <div class="dropdown messages-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pump Installation + Stimulation (revisit) <span class="pull-right"><i class="fa fa-angle-down"> </i></span> </a>
+                <ul class="dropdown-menu">
+				  <li> <a href="#"> Pump Installation + Stimulation (revisit)</a></li>
+                  <li> <a href="#"> Select Job Type </a> </li>
+                  <li><a href="#">Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair</a></li>
+                  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair (upsize)</a></li>
+                  <li> <a href="#">Pump Installation + Stimulation (revisit)</a></li>
+                  <li> <a href="#"> Pump Repair (Failed Start-up) + RIH bit scrapper</a></li>
+                  <li> <a href="#"> CTU Clean Up + Stimulation</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <p class="padding-top-10">17-IA-00567</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">Prepared</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10"> <span class="span-width">3 </span> <span class="span datepicker "><img src="../../assets/dist/images/calender-sm-icon.png" alt="" /></span></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 border-lr">
+            <div class="col-sm-4">
+              <p class="padding-top-10"></p>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3"><a>
+              <p class="padding-top-10">view</p>
+              </a></div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">A </p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+            <div class="dropdown action-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Edit </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li> <a href="#"> <i class="fa fa-pencil"> </i> Modify </a> </li>
+                <li><a href="#"> <i class="fa fa-remove"> </i>Remove</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-eq-height bg1">
+        <div class="text-size">
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+            <div class="col-sm-7">
+              <p class="padding-top-10">INTA-C21</p>
+            </div>
+            <div class="col-sm-5">
+              <p class="padding-top-10">NBU</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 border-l">
+            <div class="col-sm-5">
+              <div class="dropdown messages-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pump Repair (Failed Start-up) + RIH bit scrapper <span class="pull-right"><i class="fa fa-angle-down"> </i></span> </a>
+                <ul class="dropdown-menu">
+				  <li> <a href="#"> Pump Repair (Failed Start-up) + RIH bit scrapper</a></li>
+                  <li> <a href="#"> Select Job Type </a> </li>
+                  <li><a href="#">Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair</a></li>
+                  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair (upsize)</a></li>
+                  <li> <a href="#">Pump Installation + Stimulation (revisit)</a></li>
+                  <li> <a href="#"> Pump Repair (Failed Start-up) + RIH bit scrapper</a></li>
+                  <li> <a href="#"> CTU Clean Up + Stimulation</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <p class="padding-top-10">17-IA-00567</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">Prepared</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10"> <span class="span-width">2 </span> <span class="span datepicker "><img src="../../assets/dist/images/calender-sm-icon.png" alt="" /></span></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 border-lr">
+            <div class="col-sm-4">
+              <p class="padding-top-10"></p>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3"><a>
+              <p class="padding-top-10">view</p>
+              </a></div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">B </p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+            <div class="dropdown action-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Edit </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li> <a href="#"> <i class="fa fa-pencil"> </i> Modify </a> </li>
+                <li><a href="#"> <i class="fa fa-remove"> </i>Remove</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-eq-height bg1">
+        <div class="text-size">
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+            <div class="col-sm-7">
+              <p class="padding-top-10">INTA-C21</p>
+            </div>
+            <div class="col-sm-5">
+              <p class="padding-top-10">NBU</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 border-l">
+            <div class="col-sm-5">
+              <div class="dropdown messages-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pump Repair <span class="pull-right"><i class="fa fa-angle-down"> </i></span> </a>
+                <ul class="dropdown-menu">
+				  <li> <a href="#"> Pump Repair</a></li>
+                  <li> <a href="#"> Select Job Type </a> </li>
+                  <li><a href="#">Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair</a></li>
+                  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair (upsize)</a></li>
+                  <li> <a href="#">Pump Installation + Stimulation (revisit)</a></li>
+                  <li> <a href="#"> Pump Repair (Failed Start-up) + RIH bit scrapper</a></li>
+                  <li> <a href="#"> CTU Clean Up + Stimulation</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <p class="padding-top-10">17-IA-00567</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">Prepared</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10"> <span class="span-width"> n/a </span> <span class="span datepicker "><img src="../../assets/dist/images/calender-sm-icon.png" alt="" /></span></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 border-lr">
+            <div class="col-sm-4">
+              <p class="padding-top-10"></p>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3"><a>
+              <p class="padding-top-10">view</p>
+              </a></div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">C </p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+            <div class="dropdown action-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Edit </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li> <a href="#"> <i class="fa fa-pencil"> </i> Modify </a> </li>
+                <li><a href="#"> <i class="fa fa-remove"> </i>Remove</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-eq-height bg1 border-bottom">
+        <div class="text-size">
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+            <div class="col-sm-7">
+              <p class="padding-top-10">INTA-C21</p>
+            </div>
+            <div class="col-sm-5">
+              <p class="padding-top-10">NBU</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 border-l">
+            <div class="col-sm-5">
+              <div class="dropdown messages-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pump Repair (Suspect tubing leak) <span class="pull-right"><i class="fa fa-angle-down"> </i></span> </a>
+                <ul class="dropdown-menu">
+				  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Select Job Type </a> </li>
+                  <li><a href="#">Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair</a></li>
+                  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair (upsize)</a></li>
+                  <li> <a href="#">Pump Installation + Stimulation (revisit)</a></li>
+                  <li> <a href="#"> Pump Repair (Failed Start-up) + RIH bit scrapper</a></li>
+                  <li> <a href="#"> CTU Clean Up + Stimulation</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <p class="padding-top-10">17-IA-00567</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">Prepared</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10"> <span class="span-width"> n/a </span> <span class="span datepicker "> <img src="../../assets/dist/images/calender-sm-icon.png" alt="" /> </span></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 border-lr">
+            <div class="col-sm-4">
+              <p class="padding-top-10"></p>
+            </div>
+            <div class="col-sm-3">ESP Already on Board</div>
+            <div class="col-sm-3"><a>
+              <p class="padding-top-10">view</p>
+              </a></div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">B </p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+            <div class="dropdown action-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Edit </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li> <a href="#"> <i class="fa fa-pencil"> </i> Modify </a> </li>
+                <li><a href="#"> <i class="fa fa-remove"> </i>Remove</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-eq-height border-bottom">
+        <div class="col-md-12">
+          <h4 class="text-color"> COLS 222 (SBU) </h4>
+        </div>
+      </div>
+      <div class="row row-eq-height bg1 border-top">
+        <div class="text-size">
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+            <div class="col-sm-7">
+              <p class="padding-top-10">INTA-C21</p>
+            </div>
+            <div class="col-sm-5">
+              <p class="padding-top-10">NBU</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 border-l">
+            <div class="col-sm-5">
+              <div class="dropdown messages-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pump Repair (Suspect tubing leak) <span class="pull-right"><i class="fa fa-angle-down"> </i></span> </a>
+                <ul class="dropdown-menu">
+				 <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Select Job Type </a> </li>
+                  <li><a href="#">Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair</a></li>
+                  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair (upsize)</a></li>
+                  <li> <a href="#">Pump Installation + Stimulation (revisit)</a></li>
+                  <li> <a href="#"> Pump Repair (Failed Start-up) + RIH bit scrapper</a></li>
+                  <li> <a href="#"> CTU Clean Up + Stimulation</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <p class="padding-top-10">17-IA-00567</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">Prepared</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10"> <span class="span-width"> 3 </span> <span class="span datepicker "> <img src="../../assets/dist/images/calender-sm-icon.png" alt="" /> </span></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 border-lr">
+            <div class="col-sm-4">
+              <p class="padding-top-10"></p>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3"><a>
+              <p class="padding-top-10">view</p>
+              </a></div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">A </p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+            <div class="dropdown action-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Edit </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li> <a href="#"> <i class="fa fa-pencil"> </i> Modify </a> </li>
+                <li><a href="#"> <i class="fa fa-remove"> </i>Remove</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-eq-height bg1">
+        <div class="text-size">
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+            <div class="col-sm-7">
+              <p class="padding-top-10">INTA-C21</p>
+            </div>
+            <div class="col-sm-5">
+              <p class="padding-top-10">NBU</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 border-l">
+            <div class="col-sm-5">
+              <div class="dropdown messages-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pump Repair (Suspect tubing leak) <span class="pull-right"><i class="fa fa-angle-down"> </i></span> </a>
+                <ul class="dropdown-menu">
+				  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Select Job Type </a> </li>
+                  <li><a href="#">Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair</a></li>
+                  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair (upsize)</a></li>
+                  <li> <a href="#">Pump Installation + Stimulation (revisit)</a></li>
+                  <li> <a href="#"> Pump Repair (Failed Start-up) + RIH bit scrapper</a></li>
+                  <li> <a href="#"> CTU Clean Up + Stimulation</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <p class="padding-top-10">17-IA-00567</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">Prepared</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10"> <span class="span-width"> 2 </span> <span class="span datepicker "> <img src="../../assets/dist/images/calender-sm-icon.png" alt="" /> </span></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 border-lr">
+            <div class="col-sm-4">
+              <p class="padding-top-10"></p>
+            </div>
+            <div class="col-sm-3">ESP already on Board</div>
+            <div class="col-sm-3"><a>
+              <p class="padding-top-10">view</p>
+              </a></div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">B </p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+            <div class="dropdown action-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Edit </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li> <a href="#"> <i class="fa fa-pencil"> </i> Modify </a> </li>
+                <li><a href="#"> <i class="fa fa-remove"> </i>Remove</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-eq-height bg1">
+        <div class="text-size">
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+            <div class="col-sm-7">
+              <p class="padding-top-10">INTA-C21</p>
+            </div>
+            <div class="col-sm-5">
+              <p class="padding-top-10">NBU</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 border-l">
+            <div class="col-sm-5">
+              <div class="dropdown messages-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pump Repair (upsize) <span class="pull-right"><i class="fa fa-angle-down"> </i></span> </a>
+                <ul class="dropdown-menu">
+                  <li> <a href="#"> Select Job Type </a> </li>
+                  <li><a href="#">Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair</a></li>
+                  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair (upsize)</a></li>
+                  <li> <a href="#">Pump Installation + Stimulation (revisit)</a></li>
+                  <li> <a href="#"> Pump Repair (Failed Start-up) + RIH bit scrapper</a></li>
+                  <li> <a href="#"> CTU Clean Up + Stimulation</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <p class="padding-top-10">17-IA-00567</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">Prepared</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10"><span class="span-width"> 5 </span> <span class="span datepicker "> <img src="../../assets/dist/images/calender-sm-icon.png" alt="" /> </span></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 border-lr">
+            <div class="col-sm-4">
+              <p class="padding-top-10"></p>
+            </div>
+            <div class="col-sm-3"> ESP sent 23 Nov </div>
+            <div class="col-sm-3"><a>
+              <p class="padding-top-10">view</p>
+              </a></div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">C </p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+            <div class="dropdown action-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Edit </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li> <a href="#"> <i class="fa fa-pencil"> </i> Modify </a> </li>
+                <li><a href="#"> <i class="fa fa-remove"> </i>Remove</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-eq-height bg1 border-bottom">
+        <div class="text-size">
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+            <div class="col-sm-7">
+              <p class="padding-top-10">INTA-C21</p>
+            </div>
+            <div class="col-sm-5">
+              <p class="padding-top-10">NBU</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 border-l">
+            <div class="col-sm-5">
+              <div class="dropdown messages-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> PNN <span class="pull-right"><i class="fa fa-angle-down"> </i></span> </a>
+                <ul class="dropdown-menu">
+				  <li> <a href="#"> PNN </a></li>
+                  <li> <a href="#"> Select Job Type </a> </li>
+                  <li><a href="#">Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair</a></li>
+                  <li> <a href="#"> Pump Repair (Suspect tubing leak)</a></li>
+                  <li> <a href="#"> Pump Repair (upsize)</a></li>
+                  <li> <a href="#">Pump Installation + Stimulation (revisit)</a></li>
+                  <li> <a href="#"> Pump Repair (Failed Start-up) + RIH bit scrapper</a></li>
+                  <li> <a href="#"> CTU Clean Up + Stimulation</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <p class="padding-top-10">17-IA-00567</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">Prepared</p>
+            </div>
+            <div class="col-sm-2">
+              <p class="padding-top-10"><span class="span-width"> 3 </span> <span class="span datepicker "> <img src="../../assets/dist/images/calender-sm-icon.png" alt="" /> </span></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 border-lr">
+            <div class="col-sm-4">
+              <p class="padding-top-10"></p>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3"><a>
+              <p class="padding-top-10">view</p>
+              </a></div>
+            <div class="col-sm-2">
+              <p class="padding-top-10">B </p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+            <div class="dropdown action-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Edit </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li> <a href="#"> <i class="fa fa-pencil"> </i> Modify </a> </li>
+                <li><a href="#"> <i class="fa fa-remove"> </i>Remove</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------------------------------------------------------------------------------------>
+<div class="NewWOSchedule">
+  <div class="modal fade ViewGraphs" id="NewWOSchedule">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close alaramclose" data-dismiss="modal"> <img src="../../assets/dist/img/close_btn.png" alt=""></button>
+          <div class="row">
+            <div class="col-lg-7">
+              <h3><span>Add</span> a New WO Schedule </h3>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-4">
+              <h4>Business Unit</h4>
+              <div class="mui-select" tabindex="0">
+                <select tabindex="-1">
+                  <option>Select Business Unit </option>
+                  <option>Business Unit 2</option>
+                  <option>Business Unit 3</option>
+                  <option>Business Unit 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h4>Well Name</h4>
+              <div class="mui-select" tabindex="0">
+                <select tabindex="-1">
+                  <option> Select Well </option>
+                  <option>Well Name 2</option>
+                  <option>Well Name 3</option>
+                  <option>Well Name 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h4>Formation</h4>
+              <div class="mui-textfield" tabindex="0">
+                <input type="text" placeholder="Enter Data" />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h4>Contaract</h4>
+              <div class="mui-textfield" tabindex="0">
+                <input type="text" placeholder="Enter Data" />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h4>Proposed Job</h4>
+              <div class="mui-select" tabindex="0">
+                <select tabindex="-1">
+                  <option> Select Job Type</option>
+                  <option> pump Repair (Suspect tubing leak)</option>
+                  <option> Pump Repair</option>
+                  <option> Pump Repair (Suspect tubing leak)</option>
+                  <option> Pump Repair (upsize)</option>
+                  <option> Pump Installation + Stimulation (revisit)</option>
+                  <option> Pump Repair (Failed Start-up) + RIH bit scrapper</option>
+                  <option> CTU Clean Up + Stimulation</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h4>AFE No.</h4>
+              <div class="mui-textfield" tabindex="0">
+                <input type="text" placeholder="Enter Data" />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h4>Status </h4>
+              <div class="mui-textfield" tabindex="0">
+                <input type="text" placeholder="Enter Data" />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h4>POT</h4>
+              <div class="mui-textfield" tabindex="0">
+                <input type="text" placeholder="Enter Data" />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h4>Days</h4>
+              <div class="mui-select" tabindex="0">
+                <select tabindex="-1">
+                  <option> 1</option>
+                  <option> 2</option>
+                  <option> 3</option>
+                  <option> 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h4>Proposed ESP Type</h4>
+              <div class="mui-textfield" tabindex="0">
+                <input type="text" placeholder="Enter Data" />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h4> ESP Status</h4>
+              <div class="mui-textfield" tabindex="0">
+                <input type="text" placeholder="Enter Data" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-8">
+              <h4> Comments </h4>
+              <div class="mui-textfield" tabindex="0">
+                <textarea placeholder="Add Comments"> </textarea>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <h4>&nbsp; </h4>
+              <button type="submit" class="btn btn"> Add WO Schedule </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.box-body --> 
+    
+  </div>
+</div>

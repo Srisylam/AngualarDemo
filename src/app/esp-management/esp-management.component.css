@@ -1,0 +1,64 @@
+.with-nav-tabs.panel-primary .nav-tabs > li.disabled > a, .with-nav-tabs.panel-primary .nav-tabs > li.disabled > a:hover, .with-nav-tabs.panel-primary .nav-tabs > li.disabled > a:focus {
+	color: rgba(0, 0, 0, 0.4) !important;
+	background: none;
+	border-bottom: transparent !important;
+}
+.with-nav-tabs.panel-primary .nav-tabs > li.disabled > a, .with-nav-tabs.panel-primary .nav-tabs > li.disabled {
+	color: rgba(0, 0, 0, 0.4);
+	background: none;
+	cursor: not-allowed;
+}
+.pump-sizing-request .btn1 {
+	color: #fff;
+	padding: 5px 30px;
+	margin: 45px 0;
+}
+.pump-sizing-request .margin-none {
+	margin: 0 !important;
+}
+.new-equipment-details-text-form {
+}
+.new-equipment-details-text-form >p:first-child {
+	color: #8da9d6;
+	font-size: 14px;
+}
+.new-equipment-details-text-form >p {
+	color: #5b5b5b;
+	font-size: 14px;
+}
+.new-equipment-details-text-form .mui-textfield {
+	padding: 0px;
+	margin: -10px 0px 10px 0px
+}
+.new-equipment-details-text-form .underline {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	background-color: transparent;
+	color: rgba(0, 0, 0, 0.87);
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+	outline: none;
+	width: 100%;
+	padding: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0px;
+	font-family: inherit;
+	line-height: inherit;
+	background-image: none;
+}
+.text-box-with-lable {
+	display: inline-block;
+}
+.text-box-with-lable p {
+	display: inline-block;
+}
+.text-box-with-lable div.mui-textfield {
+	display: inline-block;
+}
+.disabled-text {
+	cursor: not-allowed;
+	color: rgba(10, 10, 10 0.5)
+}
+.well-status-tab-info>span{ height: 16px; width: 16px; line-height: 16px; text-align: center; border-radius: 50%; display: inline-block; color: #FFF; margin: 3px; font-size: 10px;top: -5px; right: 0px; position: absolute; }

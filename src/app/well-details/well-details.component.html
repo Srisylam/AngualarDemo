@@ -1,0 +1,433 @@
+
+<section class="well-details-section"> 
+	<div class="breadcrumbs">
+        <ol class="breadcrumb">
+          <!--<li><a href="#" class="toggle-sidebar"> <img src="dist/images/back_back_btn.png" alt="" /> </a> </li>-->
+          <li><a href="index_map.html"> Home </a></li>
+          <li class="active">Well Management</li>
+        </ol>
+      </div>
+	
+	
+<div class="esp-installation-history">
+  <div class="panel with-nav-tabs panel-primary">
+    <div class="panel-heading">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#WellStatus" data-toggle="tab">Well Status</a></li>
+        <li><a href="#FluidsData" data-toggle="tab">Fluids Data</a></li>
+        <li><a href="#ReservoirData" data-toggle="tab">Reservoir Data</a></li>
+        <li ><a href="#WellboreData" data-toggle="tab">Wellbore Data</a></li>
+        <li><a href="#WellAnalysis" data-toggle="tab">Well Analysis</a></li>
+      </ul>
+    </div>
+    <div class="panel-body">
+      <div class="tab-content">
+        <div class="tab-pane fade in active" id="WellStatus">
+          <div class="WellStatusInfo">
+            <div  class="row fluids_data">
+              <div class="col-lg-12"> 
+                <!-- <div class="row">
+                      <div><img class="img-responsive" src="dist/images/panorama.png" alt=""></div>
+                    </div>-->
+                <div class="row">
+                  <div class="col-lg-7 col-md-6">
+                    <div class="box no-border">
+                      <div class="box-header with-border">
+                        <div class="">
+                          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <div class="filtertitle"> <strong>Wel</strong>l Status Info </div>
+                          </div>
+                          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <div class="chart_lables">
+                              <label> <i class="fa fa-circle-o text-yellow"> </i>Status</label>
+                              <label> <i class="fa fa-circle-o text-green"> </i>Events</label>
+                              <label> <i class="fa fa-circle-o text-red"> </i>Alarm</label>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="filterby">
+                              <label> filter by</label>
+                              <select>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="opel">Opel</option>
+                                <option value="audi">Audi</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-body">
+                        <div id="container_graph" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                      </div>
+                      <div class="small-box-footer"></div>
+                    </div>
+                    <div class="box no-border">
+                      <div class="box-header with-border">
+                        <div class="row">
+                          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <div class="filtertitle"> <strong>Wel</strong>l Flowrate </div>
+                          </div>
+                          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <div class="chart_lables">
+                              <label> <i class="fa fa-circle-o text-yellow"> </i>Flowrate</label>
+                              <label> <i class="fa fa-circle-o text-green"> </i>Events</label>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="filterby">
+                              <label> filter by</label>
+                              <select>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="opel">Opel</option>
+                                <option value="audi">Audi</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-body">
+                        <div id="container_graph1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                      </div>
+                      <div class="small-box-footer"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row">
+                      <div class="col-sm-6 col-xs-12">
+                        <div class="box no-border">
+                          <div class="box-body">
+                            <div class="inner knob-pad">
+                              <input type="text" class="knob text-blue" value="100%" data-width="150" data-height="150" data-fgColor="#ffce44"  data-angleOffset="-125 "data-angleArc="250" />
+                              <label> Intake Pressure </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box no-border">
+                          <div class="box-body">
+                            <div class="celcius">
+                              <div class="row">
+                                <div class="col-sm-8 col-xs-8"><ins class="">200<sup>o</sup></ins><span> Celcius</span></div>
+                                <div class="col-sm-4 col-xs-4"> <img src="../../assets/dist/img/thermometer.png" alt="" /> </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-12 ">
+                                  <div class="title"> Well Temperature</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xs-12">
+                        <div class="box no-border">
+                          <div class="box-body">
+                          
+                              <div class="well-pump">
+                                <label class="col-xs-12"> Last Run = xx days</label>
+                                <label class="col-xs-12" >Asset life = yy days</label>
+                              </div>                           
+							 <div class="min-height"></div>                          
+                              <div class="pump">
+                                <div class="h-line-top"> </div>
+                                   <div class="pumpvalues">
+                                  <ul>
+                                    <li><i class="fa fa-circle text-orange"></i> 250.00</li>
+                                    <li><i class="fa fa-circle text-purple"></i> 250.00</li>
+                                    <li><i class="fa fa-circle text-aqua"></i> 250.00</li>
+                                    <li><i class="fa fa-circle text-purple"></i> 250.00</li>
+                                    <li><i class="fa fa-circle text-orange"></i> 250.00</li>
+                                  </ul>
+								 </div>
+								  <div class="thermometer-outer-v"><img src="../../assets/dist/img/pump.png" > </div>                               
+                                <div class="thermometer-noconfig" data-percent="55" data-orientation="vertical"></div>
+                                <div class="indcate-ftimg"><img src="../../assets/dist/img/indcate-ftimg.png"></div>                             
+							 </div>
+                           
+							
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="box no-border">
+                          <div class="box-header with-border">
+                            <div class="row">
+                              <div class="col-sm-10 col-xs-10">
+                                <div class="filtertitle"> <strong>Ala</strong>rm History </div>
+                              </div>
+                              <div class="col-sm-2 col-xs-2"> <i class="fa fa-cogs text-aqua pill-right"></i></div>
+                            </div>
+                          </div>
+                          <div class="box-body">
+                            <div class="simscroller_timeline">
+                              <div class="box_timeline">
+                                <ul id="first-list">
+                                  <li> <span></span>
+                                    <div class="info">the best animation , the best toturials you would ever see .</div>
+                                    <div class="time"> <span>Dec 15<sup>th</sup> <br/>
+                                      02:00 PM </span></div>
+                                  </li>
+                                  <li> <span></span>
+                                    <div class="info">the best animation , the best toturials you would ever see here only . you can learn how to animate and how to use SVG . even else you can add your own animations .</div>
+                                    <div class="time"> <span>JUN, 29<sup>th</sup> <br/>
+                                      02:00 PM </span> </div>
+                                  </li>
+                                  <li> <span></span>
+                                    <div class="info">the best animation , the best toturials you would ever see . what about canvas ?? do you like it ..</div>
+                                    <div class="time"> <span>FEB, 2<sup>nd</sup> <br/>
+                                      02:00 PM </span> </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="FluidsData"> 
+			<!--<div class="title_np"><span>Fl</span>uids Data </div>-->
+		  <app-fluids-data> </app-fluids-data>
+		  
+		  </div>
+        <div class="tab-pane fade" id="ReservoirData"> 
+		  
+		  <app-reservoir-data> </app-reservoir-data>
+		  
+		  </div>
+        <div class="tab-pane fade" id="WellboreData"> 
+		  <app-wellbore-data> </app-wellbore-data>
+		  
+		  </div>
+        <div class="tab-pane fade" id="WellAnalysis"> 
+		<app-well-analysis> </app-well-analysis>
+		  
+		  </div>
+      </div>
+    </div>
+  </div>
+</div>
+	
+</section>	
+	
+<script src="../../assets/dist/js/jquery.knob.js"></script> 
+<script src="../../assets/dist/js/highcharts.js"></script> 
+<script src="../../assets/dist/js/data.js"></script> 
+<script src="../../assets/dist/js/exporting.js"></script> 
+<script src="../../assets/dist/js/jquery-jvectormap-1.2.2.min.js"></script> 
+<script src="../../assets/dist/js/jquery-jvectormap-world-mill-en.js"></script> 
+<script src="../../assets/dist/js/jquery.thermometer.js"></script> 
+<script>
+
+	$(function() {
+      $('.table-scroll').slimscroll({
+      		height: '151px'
+      });
+		$(".menuscroller").slimscroll({
+      		height: '120px'
+      });
+		$(".simscroller_timeline").slimscroll({
+      		height: '430px'
+      });
+		
+    });
+
+</script> 
+<script>
+	Highcharts.chart('container_graph', {
+    chart: {
+        zoomType: 'xy'
+    },
+    title: {
+        text: ' '
+    },
+   
+    xAxis: [{
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        crosshair: true
+    }],
+    yAxis: [{ // Primary yAxis
+        labels: {
+            format: '{value}°C',
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+        title: {
+            text: 'Temperature',
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        }
+    }, { // Secondary yAxis
+        title: {
+            text: 'Rainfall',
+            style: {
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        labels: {
+            format: '{value} mm',
+            style: {
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        opposite: true
+    }],
+    tooltip: {
+        shared: true
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'left',
+        x: 120,
+        verticalAlign: 'top',
+        y: 100,
+        floating: true,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+    },
+    series: [{
+        name: 'Rainfall',
+        type: 'column',
+        yAxis: 1,
+        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+        tooltip: {
+            valueSuffix: ' mm'
+        }
+
+    }, {
+        name: 'Temperature',
+        type: 'spline',
+        data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+        tooltip: {
+            valueSuffix: '°C'
+        }
+    }]
+});
+	Highcharts.chart('container_graph1', {
+    chart: {
+        zoomType: 'xy'
+    },
+    title: {
+        text: ' '
+    },
+    subtitle: {
+        text: ' '
+    },
+    xAxis: [{
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        crosshair: true
+    }],
+    yAxis: [{ // Primary yAxis
+        labels: {
+            format: '{value}°C',
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+        title: {
+            text: 'Temperature',
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        }
+    }, { // Secondary yAxis
+        title: {
+            text: 'Rainfall',
+            style: {
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        labels: {
+            format: '{value} mm',
+            style: {
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        opposite: true
+    }],
+    tooltip: {
+        shared: true
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'left',
+        x: 120,
+        verticalAlign: 'top',
+        y: 100,
+        floating: true,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+    },
+    series: [{
+        name: 'Rainfall',
+        type: 'column',
+        yAxis: 1,
+        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+        tooltip: {
+            valueSuffix: ' mm'
+        }
+
+    }, {
+        name: 'Temperature',
+        type: 'spline',
+        data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+        tooltip: {
+            valueSuffix: '°C'
+        }
+    }]
+});
+$(".knob").knob({
+      
+      draw: function () {
+        if (this.$.data('skin') == 'tron') {
+          var a = this.angle(this.cv)  // Angle
+              , sa = this.startAngle          // Previous start angle
+              , sat = this.startAngle         // Start angle
+              , ea                            // Previous end angle
+              , eat = sat + a                 // End angle
+              , r = true;
+          this.g.lineWidth = this.lineWidth;
+          this.o.cursor
+          && (sat = eat - 0.3)
+          && (eat = eat + 0.3);
+
+          if (this.o.displayPrevious) {
+            ea = this.startAngle + this.angle(this.value);
+            this.o.cursor
+            && (sa = ea - 0.3)
+            && (ea = ea + 0.3);
+            this.g.beginPath();
+            this.g.strokeStyle = this.previousColor;
+            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
+            this.g.stroke();
+          }
+
+          this.g.beginPath();
+          this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
+          this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
+          this.g.stroke();
+
+          this.g.lineWidth = 2;
+          this.g.beginPath();
+          this.g.strokeStyle = this.o.fgColor;
+          this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+          this.g.stroke();
+
+          return false;
+        }
+      }
+    });
+	
+ $('.thermometer-noconfig').thermometer();
+</script>
+	

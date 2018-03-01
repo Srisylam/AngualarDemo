@@ -1,0 +1,829 @@
+
+
+<div class="fluids-data-section">
+  <div class="row ">
+    <div class="col-lg-6">
+      <div id="FluidsData">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="title_np"><span>Fl</span>uids Data </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <button id="FluidsDataBtn" (click)="ShowButton()" class="btn btn">Edit</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div>
+              <h3>Fields</h3>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <h3>Value</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Oil Gravity</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p> - <span class="value_text"> API </span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Gas Specific Gravity</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p>- <span class="value_text">deg F </span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Co2</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p>- <span class="value_text"> % </span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">H2S</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p>- <span class="value_text"> % </span> </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">N2</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p>- <span class="value_text"> % </span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Solution Gas Oil Ratio</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p>- <span class="value_text"> scf/bbl </span> </p>
+          </div>
+          <div class="col-md-5 value_text"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Water Specific Gravity</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p>- <span class="value_text">- </span> </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Water Cut</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p> - <span class="value_text"> % </span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Salinity</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p> - <span class="value_text"> ppm </span> </p>
+          </div>
+          <div class="col-md-5 value_text"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Separator Pressure</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p> - <span class="value_text"> psia </span> </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Separator Temperature</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p>- <span class="value_text"> deg F </span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p style="height: 30px;"></p>
+            <p><a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#PVTCorrelations">PVT Correlations</a></p>
+            <p style="height: 20px;"></p>
+            <p><a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#LaboratoryorUserEnteredData">Laboratory or User Entered Data</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <!------------------------------->
+      
+      <div id="FluidsDataEdit" *ngIf="showSelected" style="display: block;">
+        <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-5 col-xs-5">
+            <div class="title_np"><span>Fl</span>uids Data </div>
+          </div>
+        <div class="col-lg-6 col-md-6 col-sm-7 col-xs-7">
+            <button type="button" class="btn btn disabled">Cancel</button>
+            <button id="FluidsDataEditBtn" type="button" class="btn btn">Save</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div>
+              <h3>Fields</h3>
+            </div>
+          </div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <h3>Value</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Oil Gravity</div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div style="margin-top: -20px;" class="mui-textfield">
+              <input type="text" placeholder="" class="">
+            </div>
+          </div>
+          <div class="col-md-3 value_text">API </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Gas Specific Gravity</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div style="margin-top: -20px;" class="mui-textfield">
+              <input type="text" placeholder="" class="">
+            </div>
+          </div>
+         
+        </div>
+        <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="checkbox icheck">
+              <label>
+              <div class="iradio_square-green" >
+                <div class="iradio_square-green" >
+                  <input type="radio" >
+                  <ins class="iCheck-helper" ></ins></div>
+                <ins class="iCheck-helper" ></ins></div>
+              <span>Gas Liquid Ratio</span>
+              </label>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div style="margin-top: -20px;" class="mui-textfield mui-textfield--float-label">
+              <input type="text" class="">
+              <label>   <span class="value_text">scf/bbl</span></label>
+            </div>
+          </div>
+        
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="checkbox icheck">
+              <label class="">
+              <div class="iradio_square-green" >
+                <div class="iradio_square-green checked" >
+                  <input type="radio" checked="" >
+                  <ins class="iCheck-helper" ></ins></div>
+                <ins class="iCheck-helper" ></ins></div>
+              <span>Gas Oil Ratio</span>
+              </label>
+            </div>
+          </div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p>  <span class="col-md-3 value_text">scf/bbl</span> </p>
+          </div>
+         
+        </div>
+        <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Co2</div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p>   <span class="col-md-3 value_text">%</span> </p>
+          </div>
+        
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">H2S</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p> <span class="col-md-3 value_text">%</span> </p>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">N2</div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p>   <span class="col-md-3 value_text">%</span> </p>
+          </div>
+        
+        </div>
+        <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="checkbox icheck">
+              <label class="">
+              <div class="iradio_square-green" >
+                <div class="iradio_square-green" >
+                  <input type="radio">
+                  <ins class="iCheck-helper"></ins></div>
+                <ins class="iCheck-helper"></ins></div>
+              <span>Bubble Point Pressure</span>
+              </label>
+            </div>
+          </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p>   <span class="value_text">psia</span> </p>
+          </div>
+        
+        </div>
+        <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="checkbox icheck">
+              <label class="">
+              <div class="iradio_square-green" >
+                <div class="iradio_square-green" >
+                  <input type="radio" >
+                  <ins class="iCheck-helper"></ins></div>
+                <ins class="iCheck-helper"></ins></div>
+              <span>Solution Gas Oil Ratio</span>
+              </label>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p> -  <span class="value_text"> scf/bbl </span> </p>
+          </div>
+         
+        </div>
+        <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="checkbox icheck">
+              <label class="">
+              <div class="iradio_square-green" >
+                <div class="iradio_square-green checked" >
+                  <input type="radio" checked="" >
+                  <ins class="iCheck-helper" ></ins></div>
+                <ins class="iCheck-helper" ></ins></div>
+              <span>Producing GOR/GLR</span>
+              </label>
+            </div>
+          </div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p> - <span class=" value_text"> -</span> </p>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Water Specific Gravity</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p> - <span class="col-md-3 value_text"></span></p>
+          </div>
+         
+        </div>
+        <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Water Cut</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p> - <span class="value_text">%</span></p> 
+          </div>
+         
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Salinity</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p> - <span class="value_text">ppm</span></p>
+          </div>
+          
+        </div>
+        <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Separator Pressure</div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p>- <span class="value_text">psia</span></p>
+          </div>
+        
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">Separator Temperature</div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <p> - <span class="value_text">deg F</span></p>
+          </div>
+         
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p style="height: 30px;"></p>
+            <p><a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#PVTCorrelations">PVT Correlations</a></p>
+            <p style="height: 30px;"></p>
+            <p><a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#LaboratoryorUserEnteredData">Laboratory or User Entered Data</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <!------------------------------------> 
+      
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title_np"><span>Da</span>ta History</div>
+          <div class="row">
+            <div class="row marg-t-15">
+              <div class="col-md-12">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                  <p class="text-color"> Date Range </p>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+                  <div class="mui-textfield" style="padding: 0px; margin: -10px 0px 10px 0px">
+                    <input type="text" id="" placeholder="Start Date" class="">
+                    <i class="fa fa-calendar text-color input-calender"> </i> </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12">
+                  <p class="text-color">To </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="mui-textfield" style="padding: 0px; margin: -10px 0px 10px 0px">
+                    <input type="text" id="" placeholder="End Date" class="">
+                    <i class="fa fa-calendar text-color input-calender"> </i> </div>
+                </div>
+              </div>
+              <div class="col-lg-12 marg-t-15">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="mui-select" style="padding: 0px; margin: -10px 0px 10px 0px" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Graph</option>
+                      <option>Table</option>
+                    </select>
+                    <div class="mui-event-trigger"></div>
+                  </div>
+                </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="mui-select" style="padding: 0px; margin: -10px 0px 10px 0px" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Salinity</option>
+                      <option>Oil Gravity</option>
+                      <option>Water Cut</option>
+                    </select>
+                    <div class="mui-event-trigger"></div>
+                  </div>
+                </div>
+              </div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <img class="img-responsive" src="../../assets/dist/images/data_history_graph.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 marg-t-15">
+          <div class="title_np"><span>So</span>lution Gas Oil Ratio</div>
+          <div class="row">
+            <div class="row marg-t-15 ">
+              <div class="col-lg-12">
+                <div class="col-md-6 col-md-6 col-sm-12 col-xs-12">
+                  <div class="mui-select" style="padding: 0px; margin: -10px 0px 10px 0px" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Solution Gas Oil Ratio</option>
+                      <option>Water Cut</option>
+                      <option>Oil Gravity</option>
+                      <option>Separator Pressure</option>
+                    </select>
+                    <div class="mui-event-trigger"></div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-md-4 col-sm-12 col-xs-12">
+                  <div class="mui-select" style="padding: 0px; margin: -10px 0px 10px 0px" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                      <option>Model 4</option>
+                    </select>
+                    <div class="mui-event-trigger"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			 <div class="col-md-12 col-md-12 col-sm-12 col-xs-12">
+				   <img class="img-responsive" src="../../assets/dist/images/pvt-creation-img.jpg" alt=""></div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!----------------------- PVT Popup----------------------------------------------------->
+
+<div class="pvt-correlations-sec" >
+    <div class="modal fade product_view" id="PVTCorrelations" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+              <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                  <h3><span>PV</span>T Correlations</h3>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 text-right">
+                  <button type="button" class="btn btn" data-dismiss="modal"> Cancel </button>
+                  <button type="button" class="btn btn"> Save</button>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>Dead Oil Viscosity</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                      <option>Model 4</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>Saturated Oil Viscosity</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                      <option>Model 4</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>Undersaturated Oil Viscosity</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                      <option>Model 4</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>Water Viscosity</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                      <option>Model 4</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>Water Viscosity</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                      <option>Model 4</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>Oil Density</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                      <option>Model 4</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>Bubble Point Pressure</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                      <option>Model 4</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>Solution Gas Oil Ratio</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                      <option>Model 4</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>Oil Compressibility</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                      <option>Model 4</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>Oil Formation Volume Factor</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                      <option>Model 4</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>Z Factor</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                      <option>Model 4</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                  <h4>Select Variable</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option> Dead Oil Viscosity </option>
+                      <option> Saturated Oil Viscosity</option>
+                      <option> Undersaturated Oil Viscosity </option>
+                      <option> Water Viscosity </option>
+                      <option> Water viscosity</option>
+                      <option> Oil density</option>
+                      <option> Bubble point pressure</option>
+                      <option> Solution gas oil ratio</option>
+                      <option> Oil compressibility</option>
+                      <option> Oil formation volume factor</option>
+                      <option> Z factor</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                  <h4>ARRAY OF PRESSURE</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option>1000</option>
+                      <option>2000</option>
+                      <option>3000</option>
+                      <option>4000</option>
+                      <option>5000</option>
+                      <option>6000</option>
+                      <option>7000</option>
+                      <option>8000</option>
+                      <option>9000</option>
+                      <option>10000</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                  <h4>Select Model</h4>
+                  <div class="mui-select" tabindex="0">
+                    <select tabindex="-1">
+                      <option>Model 1</option>
+                      <option>Model 2</option>
+                      <option>Model 3</option>
+                      <option>Model 4</option>
+                    </select>
+                  <div class="mui-event-trigger"></div></div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                  <h4>Temperature</h4>
+                  <div class="row">
+                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                      <div class="mui-textfield">
+                        <input type="text" placeholder="245" class="">
+                      </div>
+                    </div>
+                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 padding-top-20 text-color">deg F</div>
+                  </div>
+                </div>
+              </div>
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><img class="img-responsive" alt="" src="../../assets/dist/images/pvt-creation-img.jpg"></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <!-- /.box-body --> 
+          
+        </div>
+      </div>
+    </div>
+  </div>
+<!--- Laboratory or User Entered Data----------------------------------------------------------->
+
+<div class="laboratory-or-user-entered-data">
+    <div class="modal fade product_view" id="LaboratoryorUserEnteredData" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+              <div class="row">
+                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                  <h3><span>La</span>boratory or User Entered Data</h3>
+                </div>
+                  <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 text-right">
+                  <button type="button" class="btn btn" data-dismiss="modal"> Cancel </button>
+                  <button type="button" class="btn btn"> Save</button>
+                </div>
+              </div>
+              <div class="row no-padding">
+                <div class="View-min-hight">
+					<div class="table-responsive">
+                  <table id="upload_req_history" width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-hover table-striped dataTable no-footer tab">
+                    <thead>
+                      <tr>
+                        <th> S.No</th>
+                        <th> Pressure </th>
+                        <th><div class="checkbox icheck ">
+                            <label>
+                              <div class="icheckbox_square-green checked" ><input type="checkbox" checked="" ><ins class="iCheck-helper" ></ins></div>
+                            </label>
+                          </div>
+                          Soln Gor</th>
+                        <th> <div class="checkbox icheck ">
+                            <label>
+                              <div class="icheckbox_square-green" ><input type="checkbox" ><ins class="iCheck-helper" ></ins></div>
+                            </label>
+                          </div>
+                          Oil FVF </th>
+                        <th> <div class="checkbox icheck ">
+                            <label class="">
+                              <div class="icheckbox_square-green" ><input type="checkbox" ><ins class="iCheck-helper" ></ins></div>
+                            </label>
+                          </div>
+                          Oil Viscosity </th>
+                        <th> <div class="checkbox icheck ">
+                            <label>
+                              <div class="icheckbox_square-green" ><input type="checkbox" ><ins class="iCheck-helper" ></ins></div>
+                            </label>
+                          </div>
+                          Gas Viscosity</th>
+                        <th> <div class="checkbox icheck ">
+                            <label>
+                              <div class="icheckbox_square-green" ><input type="checkbox" ><ins class="iCheck-helper" ></ins></div>
+                            </label>
+                          </div>
+                          Gas Fvf</th>
+                        <th> <div class="checkbox icheck ">
+                            <label>
+                              <div class="icheckbox_square-green" ><input type="checkbox" ><ins class="iCheck-helper" ></ins></div>
+                            </label>
+                          </div>
+                          Z Factor</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>1000</td>
+                        <td>10</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>2000</td>
+                        <td>20</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>3000</td>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>4000</td>
+                        <td>40</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>5000</td>
+                        <td>50</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>6000</td>
+                        <td>60</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>7000</td>
+                        <td>70</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>8000</td>
+                        <td>80</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>9000</td>
+                        <td>90</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>10000</td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+					</div>
+                  <div class="col-md-12">
+                    <div class="title_np"><span>Da</span>ta History</div>
+                    <div class="row">
+                      <div class="row marg-t-15">
+                        <div class="col-md-12">
+                          <div class="col-sm-2">
+                            <p class="text-color"> Date Range </p>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="mui-textfield" style="padding: 0px; margin: -10px 0px 10px 0px">
+                              <input type="text" placeholder="Start Date" class="">
+                              <i class="fa fa-calendar text-color input-calender"> </i> </div>
+                          </div>
+                          <div class="col-sm-1">
+                            <p class="text-color">To </p>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="mui-textfield" style="padding: 0px; margin: -10px 0px 10px 0px">
+                              <input type="text" placeholder="End Date" class="">
+                              <i class="fa fa-calendar text-color input-calender"> </i> </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="mui-select" style="padding: 0px; margin: -10px 0px 10px 0px" tabindex="0">
+                              <select tabindex="-1">
+                                <option>Graph</option>
+                                <option>Table</option>
+                              </select>
+                              <div class="mui-event-trigger"></div>
+                            <div class="mui-event-trigger"></div></div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="mui-select" style="padding: 0px; margin: -10px 0px 10px 0px" tabindex="0">
+                              <select tabindex="-1">
+                                <option>Solan GOR</option>
+                                <option>Oil FVF</option>
+                                <option>Oil Viscosity</option>
+                                <option>Gas Viscosity</option>
+                                <option>Gas FVF</option>
+                                <option>Z Factor</option>
+                              </select>
+                              <div class="mui-event-trigger"></div>
+                            <div class="mui-event-trigger"></div></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div><img class="img-responsive" src="dist/images/data_history_graph.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.box-body --> 
+          
+        </div>
+      </div>
+    </div>
+  </div>

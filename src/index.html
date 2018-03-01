@@ -1,14 +1,74 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Angular2App</title>
-  <base href="/">
+<meta charset="utf-8">
+<title>Angular2App</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/dist/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/dist/css/ionicons.min.css">
+<link rel="stylesheet" href="assets/dist/css/base.css">
+<link rel="stylesheet" href="assets/dist/css/datepicker3.css">
+<link rel="stylesheet" href="assets/dist/css/skins/_all-skins.min.css">
+<link rel="stylesheet" href="assets/dist/css/skins/dataTables.bootstrap.css">
+<link rel="stylesheet" href="assets/dist/css/skins/_style.css">
+<link rel="stylesheet" href="assets/dist/css/skins/mui.css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="assets/plugins/iCheck/square/green.css">
+<link rel="stylesheet" href="assets/plugins/datepicker/datepicker3.css">
+
+	
 </head>
 <body>
-  <app-root></app-root>
+<div class="hold-transition skin-blue fixed sidebar-mini">
+  <app-root> </app-root>
+</div>
 </body>
+
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+<script src="assets/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="assets/plugins/datatables/dataTables.bootstrap.min.js"></script>
+<!-- simscroll -->
+<script src="assets/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="assets/dist/js/app.min.js"></script>
+<script src="assets/dist/js/mui.js"></script>
+
+<script src="assets/plugins/iCheck/icheck.min.js"></script> 
+<!-- bootstrap datepicker --> 
+<script src="assets/plugins/datepicker/bootstrap-datepicker.js"></script> 
+	
+<script>
+	
+	 $(function() {
+      $('.table-scroll').slimscroll({
+      height: '151px'
+      });
+		$(".menuscroller").slimscroll({
+      height: '120px'
+      });
+		$(".simscroller_timeline").slimscroll({
+      height: '430px'
+      });
+		
+    });
+	
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-green',
+      radioClass: 'iradio_square-green',
+      increaseArea: '20%' // optional
+    });
+  });
+//Date picker
+    $('.datepicker').datepicker({
+      autoclose: true
+    });
+
+</script>
+	
 </html>

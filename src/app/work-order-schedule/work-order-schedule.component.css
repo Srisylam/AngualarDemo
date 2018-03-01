@@ -1,0 +1,239 @@
+.wo-schedule {
+	padding: 20px;
+}
+.title {
+	color: #1350be;
+	font-weight: normal;
+	margin: 0px;
+	font-size: 18px;
+	padding: 10px;
+}
+.title span {
+	border-bottom: 2px solid #259ae6;
+	padding-top: 10px;
+	padding-bottom: 6px;
+}
+.title_np {
+	color: #0a388a;
+	font-weight: normal;
+	margin: 0px;
+	font-size: 18px;
+	padding: 0px;
+	line-height: 45px;
+}
+.title_np span {
+	border-bottom: 2px solid #259ae6;
+	padding-top: 10px;
+	padding-bottom: 6px;
+}
+.margin-none {
+	margin: none !important;
+}
+.padding-none {
+	padding: none !important
+}
+.padding-tb {
+	padding: 15px 0px;
+}
+.padding-t {
+	padding-top: 15px !important;
+}
+.btn {
+	border-radius: 25px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid transparent;
+	background: #3361c3;
+	padding: 6px 20px;
+	color: #fff;
+	width: 100%;
+}
+.input-text {
+	padding: 0px;
+	margin: 8px 0px 10px 0px
+}
+.search {
+	display: inline-block;
+	border-radius: 40px;
+	padding: 10px 15px;
+	margin: 10px;
+	border: solid 1px #acacac;
+	width: 100%;
+	height: 35px;
+	text-align: left;
+}
+.bg {
+	background: #f9fbfc;
+	margin-right: -10px;
+	margin-left: -10px;
+	color: #8da8d8;text-transform: uppercase;
+}
+.bg1 {
+	margin-right: -10px;
+	margin-left: -10px;
+}
+.border-top {
+	border-top: solid 1px #e3edf0;
+}
+.border-bottom {
+	border-bottom: solid 1px #e3edf0;
+}
+.border-lr {
+	border-left: solid 1px #e3edf0;
+	border-right: solid 1px #e3edf0;
+}
+.border-l {
+	border-left: solid 1px #e3edf0;
+}
+.border-r {
+	border-right: solid 1px #e3edf0;
+}
+.text-size [class*="col-"] {
+	font-size: 12px;
+	color: #5b5b5b !important;
+	padding: 5px auto !important; 
+}
+.span {
+	padding-left: 5px;
+}
+.edit, .view {
+	text-align: center;
+}
+.messages-menu>.dropdown-menu {
+	width: 320px;
+	padding: 0 10px 0 10px;
+	margin: 0;
+	top: 100%;
+	box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1);
+}
+.messages-menu>.dropdown-toggle {
+	border-bottom: solid 1px #CCC;
+	display: inherit;
+	padding: 8px 0;
+	color: #5b5b5b !important;
+}
+.messages-menu>.dropdown-menu li, .messages-menu>.dropdown-menu li a {
+	padding: 3px 10px;
+	/* display: inline-block; */
+	font-size: 12px;
+}
+.messages-menu>.dropdown-menu>li>a:hover {
+	background-color: transparent !important;
+	color: #333;
+	text-decoration: underline;
+}
+.padding-top-10 {
+	padding: 10px 0px;
+}
+.action-menu>.dropdown-menu {
+	box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1);
+}
+.action-menu>.dropdown-toggle {
+	display: inherit;
+	padding: 8px 0;
+}
+.action-menu>.dropdown-menu li, .action-menu>.dropdown-menu li a {
+	padding: 3px 10px;
+	/* display: inline-block; */
+	font-size: 12px;
+	color: #9fb7dc !important;
+}
+.action-menu>.dropdown-menu>li>a:hover {
+	background-color: transparent !important;
+	color: #333;
+	text-decoration: underline;
+}
+.dropdown-menu-right {
+	width: 60px !important;
+	padding: 0 10px 0 10px;
+	margin: 0;
+	top: 100%;
+	box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1);
+	border-radius: 0px;
+}
+.span-width {
+	width: 18px;
+	display: inline-block;
+}
+.NewWOSchedule {
+}
+.NewWOSchedule {
+	display: block;
+	position: absolute;
+}
+.NewWOSchedule .btn-ground .btn-primary {
+	background: none;
+	border: none;
+}
+.NewWOSchedule .modal-header {
+	border-bottom-color: #ffffff;
+	background: #ffffff;
+	color: #000;
+}
+.NewWOSchedule .modal-body {
+	border-bottom-color: #ffffff;
+	background: #ffffff;
+	border: transparent;
+	color: #000;
+}
+.NewWOSchedule .modal-dialog {
+	width: 850px !important;
+	position: absolute;
+	right: 0;
+	top: 10%;
+	left: 0;
+	bottom: 0;
+	margin: 0 auto;
+	height: 100%;
+	min-height: 700px;
+}
+.NewWOSchedule .modal {
+	background: none;
+}
+.NewWOSchedule .modal-content {
+	border-left: 1px solid #000;
+}
+.NewWOSchedule .modal-content h3 {
+	color: #1350be;
+	font-weight: normal;
+	margin: 0px;
+}
+.NewWOSchedule .modal-content h3 span {
+	border-bottom: 2px solid #1350be;
+}
+.NewWOSchedule h4 {
+	color: #8da9d6;
+	text-transform: uppercase;
+}
+.NewWOSchedule .mui-textfield > textarea {
+	border: 1px solid #ccc !important;
+	min-height: 90px;
+	padding: 5px;
+	font-size: 14px;
+}
+.View-min-hight {
+	min-height: 255px;
+}
+.row-eq-height {
+ /* display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;*/
+}
+.datepicker {
+    padding: 0px !important;
+    border-radius:0px !important; 
+}
+@media (max-width: 991px) {
+.NewWOSchedule .modal-dialog {
+	width: 80% !important;
+	position: absolute;
+	right: 0;
+	top: 10%;
+	left: 0;
+	bottom: 0;
+	margin: 0 auto;
+	height: 100%;
+	min-height: 700px;
+}
+}

@@ -1,0 +1,342 @@
+<section class="all-wells-overview-section">
+  <div class="breadcrumbs">
+    <ol class="breadcrumb">
+      <li><a href="index_map.html"> Home </a></li>
+      <li class="active"> Well Dashboard </li>
+    </ol>
+  </div>
+  <div class="all-wells-overview-tabs">
+    <div class="clearfix"></div>
+    <div class="panel with-nav-tabs panel-primary">
+      <div class="panel-heading">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#AllWellsOverview" data-toggle="tab">All Wells Overview</a></li>
+          <li><a href="#DowntimeReports" data-toggle="tab"> Downtime Reports</a></li>
+        </ul>
+      </div>
+      <div class="panel-body">
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="AllWellsOverview">
+            <div class="all-wells-overview">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-sm-12">
+                  <div class="filterby">
+                    <label> Switch view </label>
+                    <select>
+                      <option value="volvo"> Admin</option>
+                    </select>
+                  </div>
+                </div>
+				  <div class="col-lg-3 col-md-3 col-sm-12 col-sm-12"></div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-sm-12">
+					 <div class="col-sm-4 col-xs-4"><p class="text-color pull-right"> Well Report </p></div>
+                  <div class="col-sm-4 col-xs-4">
+                    <div class="mui-select" style="padding: 0px; margin: -5px 0px 10px 0px" tabindex="0">
+                      <select tabindex="-1">
+                        <option>GITA-01:TA</option>
+                        <option>GITA-01:TA</option>
+                      </select>
+                     
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-4">
+                  <div class="pull-right">  <button type="button" class="btn btn-primary"> <span style="margin: 0px 8px;"><i class="fa fa-file-pdf-o"></i></span>  Export PDF </button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                      <div class="box no-border">
+                        <div class="box-body">
+                          <div class="das-well-box">
+                            <div class="number text-green"> 142 </div>
+                            <div class="well-text"> Pending Request </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                      <div class="box no-border">
+                        <div class="box-body">
+                          <div class="das-well-box">
+                            <div class="number text-orange"> 64% </div>
+                            <div class="well-text"> OVERALL PRODUCTION </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                      <div class="box no-border">
+                        <div class="box-body">
+                          <div class="das-well-box">
+                            <div class="number text-red"> 18% </div>
+                            <div class="well-text"> DOWNTIME INCIDENTS </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box no-border">
+                    <div class="box-body">
+                      <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                          <div class="title_np"><span>Oil</span> Production Trendz</div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 ">
+                          <div class="">
+                            <div class="dropdown well-menu"> <span> <i class="fa fa-circle-o text-green"></i> </span> <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">well 1 <i class="fa fa-angle-down"> </i></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="">well 1 </a></li>
+                                <li><a href="">well 1 </a></li>
+                                <li><a href="#">well 1 </a></li>
+								<li class="footer"><a href="#"> + Add Well</a></li> 
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                          <div class="">
+                           <div class="dropdown well-menu"> <span> <i class="fa fa-circle-o text-red"></i> </span> <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">well 5 <i class="fa fa-angle-down"> </i></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="">well 1 </a></li>
+                                <li><a href="">well 1 </a></li>
+                                <li><a href="#">well 1 </a></li>
+								<li class="footer"><a href="#"> + Add Well</a></li> 
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" style="margin-top: 25px;">
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-sm-12">
+                          <div class="col-sm-3">
+                            <p class="text-color"> Date Range </p>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="mui-textfield" style="padding: 0px; margin: -10px 0px 10px 0px">
+                              <input type="text" id="datepicker" placeholder="Start Date" class="datepicker">
+                              <i class="fa fa-calendar text-color input-calender"> </i> </div>
+                          </div>
+                          <div class="col-sm-1">
+                            <p class="text-color">To </p>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="mui-textfield" style="padding: 0px; margin: -10px 0px 10px 0px">
+                              <input type="text" id="datepicker2" placeholder="End Date" class="datepicker">
+                              <i class="fa fa-calendar text-color input-calender"> </i> </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-sm-12">
+                          <div class="filterby">
+                            <label> Filter by </label>
+                            <select>
+                              <option value="volvo"> Admin </option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <img src="../../assets/dist/images/Oil-Production-Trendz.png" alt="" class="img-responsive" /> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="box no-border">
+                        <div class="box-body">
+                          <div class="col-sm-12">
+                            <div class="title_np"><span>Top</span> Oil Production Wells</div>
+                            <div class="row border-bottom margin-top-15">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <p class="text-color">Well Name</p>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <p class="text-color">Oil Production Qty</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <p> <span> <i class="fa fa-star text-orange"> </i> </span> GITA-08:TA</p>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <p>1300 Barrels</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <p> <span> <i class="fa fa-star text-orange"> </i> </span> GITA-08:TA</p>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <p>1300 Barrels</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <p><span> <i class="fa fa-star text-orange"> </i> </span> GITA-08:TA</p>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <p>1300 Barrels</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="box no-border">
+                        <div class="box-body">
+                          <div class="row">
+                            <div class="col-sm-8 col-xs-8">
+                              <div class="title_np"><span>Flo</span>wrate History</div>
+                            </div>
+                            <div class="col-sm-4 col-xs-4">
+                              <div class="dropdown"> <span> <i class="fa fa-circle-o text-green"></i></span> <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">well 1 <i class="fa fa-angle-down"> </i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li><a href="#">well 1 </a></li>
+                                  <li><a href="#">well 1 </a></li>
+                                  <li><a href="#">well 1 </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12"> <img src="../../assets/dist/images/Flowrate-History.png" alt="" class="img-responsive" /> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <div class="box no-border">
+                    <div class="box-body">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <div class="title_np"><span>Wel</span>ls Overview</div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <div class="filterby padding-tb">
+                            <label> Sort by </label>
+                            <select>
+                              <option value="volvo"> Yesterday </option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wells-overview">
+                        <div class="row border-bottom margin-top-15">
+                          <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                            <p class="text-color">Well Name</p>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <p class="text-color">Status Change</p>
+                          </div>
+                          <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
+                            <p class="text-color">Change Title</p>
+                          </div>
+                        </div>
+                        <div class="simscroll">
+                          <div class="row border-bottom">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                              <p class="p-text"> GITA-01:TA </p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                              <p class="p-text"> <i class="fa fa-circle text-palne-brown"></i> WO OPT</p>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                              <p class="p-text">5th Feb 11:00 PM</p>
+                            </div>
+                          </div>
+                          <div class="row border-bottom">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                              <p class="p-text"> GITA-01:TA </p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                              <p class="p-text"> <i class="fa fa-circle text-palne-brown"></i> WO OPT</p>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                              <p class="p-text">5th Feb 11:00 PM</p>
+                            </div>
+                          </div>
+                          <div class="row border-bottom">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                              <p class="p-text"> GITA-01:TA </p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                              <p class="p-text"> <i class="fa fa-circle text-green"></i> Running</p>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                              <p class="p-text">5th Feb 11:00 PM</p>
+                            </div>
+                          </div>
+                          <div class="row border-bottom">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                              <p class="p-text"> GITA-01:TA </p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                              <p class="p-text"> <i class="fa fa-circle text-palne-brown"></i> Stopped</p>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                              <p class="p-text">5th Feb 11:00 PM</p>
+                            </div>
+                          </div>
+                          <div class="row border-bottom">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                              <p class="p-text"> GITA-01:TA </p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                              <p class="p-text"> <i class="fa fa-circle text-red"></i> Failed</p>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                              <p class="p-text">5th Feb 11:00 PM</p>
+                            </div>
+                          </div>
+                          <div class="row border-bottom">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                              <p class="p-text"> GITA-01:TA </p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                              <p class="p-text"> <i class="fa fa-circle text-palne-brown"></i> WO OPT</p>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                              <p class="p-text">5th Feb 11:00 PM</p>
+                            </div>
+                          </div>
+                          <div class="row border-bottom">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                              <p class="p-text"> GITA-01:TA </p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                              <p class="p-text"> <i class="fa fa-circle text-palne-brown"></i> WO OPT</p>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                              <p class="p-text">5th Feb 11:00 PM</p>
+                            </div>
+                          </div>
+                          <div class="row border-bottom">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                              <p class="p-text"> GITA-01:TA </p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                              <p class="p-text"> <i class="fa fa-circle text-palne-brown"></i> WO OPT</p>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                              <p class="p-text">5th Feb 11:00 PM</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="DowntimeReports"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
